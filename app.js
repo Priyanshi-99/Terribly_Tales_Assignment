@@ -19,7 +19,7 @@ app.post("/result",async function (req, res) {
    
 })
 
-app.listen(3000, async function () {
+app.listen(process.env.PORT, async function () {
     console.log("Server Started!");
     const url = 'https://terriblytinytales.com/test.txt'
     fetch(url).then(async (data) => {
