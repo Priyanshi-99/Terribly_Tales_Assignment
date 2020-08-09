@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <% res.forEach(function(result){ %>
+            <li><%= `The word is "${result.name}" with ${result.total} occurances.` %></li>
+        <% }); %>
+    </ul>
+    <button onclick="history.back()">Back</button>
+</div>
